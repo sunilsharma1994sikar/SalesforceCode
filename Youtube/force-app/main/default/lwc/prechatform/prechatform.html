@@ -1,0 +1,28 @@
+<template>
+
+    <div class="backgroundImg" style={getBackgroundImage} >
+
+        <div style="margin:30px;height:385px" lwc:if={showForm}>
+        <lightning-card title="Custom New Prechat Form">
+          
+            <div style="margin:10px">
+            <lightning-input type="text" label="First Name" 
+            name="FirstName" 
+             message-when-value-missing="First Name is Required" required="true"></lightning-input>
+            <lightning-input type="text" label="Last Name" 
+            name="LastName" 
+             message-when-value-missing="Last Name is Required" required="true"></lightning-input>
+            <lightning-input type="text" label="Mobile" 
+            name="MobilePhone" 
+             message-when-value-missing="Mobile is Required" required="true"></lightning-input>
+            </div>
+            <div slot="footer" style="margin-left: auto;margin-right:auto">
+                <lightning-button variant="brand" label="Start Chat" title="Start Chat" 
+                onclick={handleStartChat} class="slds-m-top_medium">
+                </lightning-button>
+            </div>
+        </lightning-card>
+        </div>
+
+</div>
+</template>

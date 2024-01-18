@@ -1,0 +1,11 @@
+:host {
+    display: flex;
+    flex-direction: column;
+}
+
+lightning-button {
+    padding-top: 1em;
+}
+.backgroundImg{
+   
+}
